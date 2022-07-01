@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <main class="app">
+
+        <section class="saudacoes">
+
+            <h2 class="title">
+                Olá, <input type="text" id="name" placeholder="Seu nome aqui">
+            </h2>
+
+        </section>
+
+        <section class="criar-lista">
+
+            <h3>CRIAR UMA TAREFA</h3>
+
+            <form id="new-todo-form">
+                <h4>Qual a sua tarefa para a lista?</h4>
+                <input type="text" name="content" id="content" placeholder="ex.: passar no mercado">
+                <h4>Escolha uma categoria</h4>
+                <div class="options">
+
+                    <label>
+                        <input type="radio" name="categoria" id="categoria1" value="profissional">
+                        <span class="bubble-profissional"></span>
+                        <div>Profissional</div>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="categoria" id="categoria2" value="pessoal">
+                        <span class="bubble-pessoal"></span>
+                        <div>Pessoal</div>
+                    </label>
+                </div>
+
+                <input type="submit" value="Adicionar tarefa">
+            </form>
+
+        </section>
+
+        <section class="lista-tarefas">
+
+            <h3>LISTA DE TAREFAS</h3>
+            <div class="lis" id="todo-list">
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble profissional"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Retornar ligação" readonly>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Editar</button>
+                        <button class="delete">Deletar</button>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble pessoal"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Passar no mercado" readonly>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Editar</button>
+                        <button class="delete">Deletar</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+</html>
