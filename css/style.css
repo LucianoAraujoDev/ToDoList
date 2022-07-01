@@ -1,5 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 
+:root{
+    --principal:#f83292;
+    --profissional: #814096;
+    --gradiente:linear-gradient(90deg, var(--profissional), var(--principal));
+    --pessoal: var(var(--principal));
+    --light: #EEE;
+    --grey: #888;
+    --dark: #313154;
+    --danger: #ff5b57;
+
+    --shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+    --profissional-brilho: 0px 0px 4px rgba(129, 64, 150, 0.75);
+    --pessoal-brilho: 0px 0px 4px rgba(248, 50, 146, 0.75);
+}
+
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
+}
+
+body{
+    background: var(--light);
+    color: var(--dark);
+}
+
+section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+h3{
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+h4{
+    color: var(--grey);
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
